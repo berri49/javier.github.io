@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home">
+
+  <div class="home-bg"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <div class="page-title light-text">Homepage</div>
+
+  <main class="home-stage">
+
+    <div class="home-sec dflt" id="hs1">
+      <a class="home-media" href="gallery.html#gs1">
+        <video src="media/dar/dar4v.main.mp4"
+               autoplay loop muted playsinline
+               poster="media/dar/dar4.background.jpg"></video>
+      </a>
+      <div class="home-title">Mount Daraitan</div>
+    </div>
+
+    <div class="home-sec" id="hs2">
+      <a class="home-media" href="gallery.html#gs2">
+        <video src="media/mas/mas2v.main.mp4"
+               autoplay loop muted playsinline
+               poster="media/mas/mas2.background.jpg"></video>
+      </a>
+      <div class="home-title">Mascap Trilogy</div>
+    </div>
+
+    <div class="home-sec" id="hs3">
+      <a class="home-media" href="gallery.html#gs3">
+        <video src="media/bat/bat5v.main.MP4"
+               autoplay loop muted playsinline
+               poster="media/bat/bat5.background.jpg"></video>
+      </a>
+      <div class="home-title">Mount Batulao</div>
+    </div>
+
+    <div class="home-sec" id="hs4">
+      <a class="home-media" href="gallery.html#gs4">
+        <video src="media/tar/tar4.main.MOV"
+               autoplay loop muted playsinline
+               poster="media/tar/tar4.background.jpg"></video>
+      </a>
+      <div class="home-title">Tarak Ridge</div>
+    </div>
+
+    <div class="home-sec" id="hs5">
+      <a class="home-media" href="gallery.html#gs5">
+        <video src="media/mak/mak6v.main.mp4"
+               autoplay loop muted playsinline
+               poster="media/mak/mak6.background.jpg"></video>
+      </a>
+      <div class="home-title">Mount Makiling</div>
+    </div>
+
+    <div class="home-sec" id="hs6">
+      <a class="home-media" href="gallery.html#gs6">
+        <video src="media/ula/ula5v.main.MOV"
+               autoplay loop muted playsinline
+               poster="media/ula/ula18.background.jpg"></video>
+      </a>
+      <div class="home-title">Mount Ulap</div>
+    </div>
+
+    <div class="home-sec" id="hs7">
+      <a class="home-media" href="gallery.html#gs7">
+        <img src="media/others/continued.main.jpg" alt="More to come" />
+      </a>
+      <div class="home-title">More to Come</div>
+    </div>
+
+  </main>
+
+  <!-- s1: prev→7, next→2 -->
+  <div class="ap s1">
+    <a class="arrow left"  href="#hs7" data-tip="More to Come">&#8592;</a>
+    <a class="arrow right" href="#hs2" data-tip="Mas">&#8594;</a>
+  </div>
+  <!-- s2: prev→1, next→3 -->
+  <div class="ap s2">
+    <a class="arrow left"  href="#hs1" data-tip="Dar">&#8592;</a>
+    <a class="arrow right" href="#hs3" data-tip="Bat">&#8594;</a>
+  </div>
+  <!-- s3: prev→2, next→4 -->
+  <div class="ap s3">
+    <a class="arrow left"  href="#hs2" data-tip="Mas">&#8592;</a>
+    <a class="arrow right" href="#hs4" data-tip="Tar">&#8594;</a>
+  </div>
+  <!-- s4: prev→3, next→5 -->
+  <div class="ap s4">
+    <a class="arrow left"  href="#hs3" data-tip="Bat">&#8592;</a>
+    <a class="arrow right" href="#hs5" data-tip="Mak">&#8594;</a>
+  </div>
+  <!-- s5: prev→4, next→6 -->
+  <div class="ap s5">
+    <a class="arrow left"  href="#hs4" data-tip="Tar">&#8592;</a>
+    <a class="arrow right" href="#hs6" data-tip="Ula">&#8594;</a>
+  </div>
+  <!-- s6: prev→5, next→7 -->
+  <div class="ap s6">
+    <a class="arrow left"  href="#hs5" data-tip="Mak">&#8592;</a>
+    <a class="arrow right" href="#hs7" data-tip="More to Come">&#8594;</a>
+  </div>
+  <!-- s7: prev→6, next→1 -->
+  <div class="ap s7">
+    <a class="arrow left"  href="#hs6" data-tip="Ula">&#8592;</a>
+    <a class="arrow right" href="#hs1" data-tip="Dar">&#8594;</a>
+  </div>
+
+</body>
+</html>
