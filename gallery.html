@@ -309,3 +309,18 @@
     });
   });
 </script>
+  <script>
+  function pauseSectionVideos(sec) {
+    sec.querySelectorAll('video').forEach(function(v) { v.pause(); });
+  }
+
+  window.addEventListener('hashchange', function() {
+    document.querySelectorAll('.gsec').forEach(pauseSectionVideos);
+  });
+
+  document.querySelectorAll('.gtabs a, .arrow').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.querySelectorAll('.gsec').forEach(pauseSectionVideos);
+    });
+  });
+</script>
